@@ -1,4 +1,4 @@
-import { defineConfig } from '@pandacss/dev'
+import { defineConfig } from '@pandacss/dev';
 
 export default defineConfig({
   // Whether to use css reset
@@ -15,8 +15,16 @@ export default defineConfig({
     extend: {},
   },
 
+  patterns: {
+    extend: {
+      circle: {
+        jsx: ['Circle', 'CustomCircle'],
+      },
+    },
+  },
+
   // The output directory for your css system
   outdir: 'styled-system',
 
   jsxFramework: 'react',
-})
+});
